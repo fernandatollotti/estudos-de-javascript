@@ -12,7 +12,7 @@ Sinta-se à vontade para explorar e contribuir!
 ## 🤝 Como Contribuir
 1. Fork este repositório.
 2. Crie uma nova branch `git checkout -b nova-branch`.
-3. Faça suas alterações e commit `git commit -m 'Descrição da alteração`.
+3. Faça suas alterações e commit `git commit -m 'Descrição da alteração'`.
 4. Envie para o repositório remoto `git push origin nova-branch`.
 5. Abra um Pull Request.
 
