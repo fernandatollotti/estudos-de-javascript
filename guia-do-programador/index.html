@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia do Programador: Escolha Sua Carreira</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <!-- css -->
+     <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <section class="career-selection">
+        <!-- cabeçalho com introdução e botão de início -->
+        <header class="header">
+          <h1>Guia do Programador: Escolha sua carreira</h1>
+         <div id="text_content">
+            <p>Bem-vindo ao nosso guia interativo! Para começar, clique no botão "Iniciar" abaixo. Em seguida, selecione uma tecnologia. Depois, você escolherá entre as áreas de "Front-End", "Back-End" ou "FullStack".</p>
+            <p>Ao final, uma mensagem confirmará sua escolha e fornecerá uma breve descrição da carreira selecionada. Lembre-se de que você pode escolher apenas uma carreira. Boa sorte na sua jornada!</p>
+         </div>
+          <button type="button" class="btn_circle btn_green_dark pulse" id="btn_start">Iniciar</button>
+        </header>
+
+        <!-- seção principal para selecionar a área de interesse -->
+        <main id="main_content">
+          <h2>Escolha sua área de interesse</h2>
+          <div class="buttons">
+            <button type="button" class="btn btn_orange" id="btn_front">Front-End</button>
+            <button type="button" class="btn btn_green" id="btn_back">Back-End</button>
+            <button type="button" class="btn btn_brown active" id="btn_full"></button>
+          </div>
+          <span id="message_feedback"></span>
+        </main>
+      </section>
+    </div>
+
+    <!-- js -->
+     <script src="assets/js/data.js"></script>
+     <script src="assets/js/script.js"></script>
+  </body>
+</html>
