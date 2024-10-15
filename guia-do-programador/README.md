@@ -1,4 +1,3 @@
-
 # Guia do Programador
 
 ## 🚀 Descrição do projeto
@@ -24,7 +23,7 @@ O objetivo deste projeto é fornecer uma experiência interativa para ajudar os 
 - Mensagens de feedback com descrições das carreiras
 - Interface responsiva e interativa
 
-## 📝 Como usar
+## 📝 Como funciona
 1. Acesse a página do projeto.
 2. Clique no botão "Iniciar" para começar.
 3. Selecione uma tecnologia que deseja aprender.
