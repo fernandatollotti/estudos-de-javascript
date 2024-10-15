@@ -6,7 +6,7 @@ Este repositório foi criado para estudar a lógica de programação por meio de
 Sinta-se à vontade para explorar e contribuir!
 
 ## 🗂️ Estrutura do Repositório
-**Projetos:** Exemplos práticos de conceitos abordados.
+**Projetos:** Exemplos práticos de conceitos abordados. <br/>
 **Exercícios:** Desafios para reforçar o aprendizado.
 
 ## 🤝 Como Contribuir
