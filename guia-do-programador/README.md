@@ -20,7 +20,7 @@ O objetivo deste projeto é fornecer uma experiência interativa para ajudar os 
 
 ## ✨ Funcionalidades
 - Seleção de tecnologia (Front-End, Back-End)
-- Exibição de opções de carreira
+- Exibição de opções das tecnologias
 - Mensagens de feedback com descrições das carreiras
 - Interface responsiva e interativa
 
