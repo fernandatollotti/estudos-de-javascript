@@ -31,4 +31,4 @@ O objetivo deste projeto é fornecer uma experiência interativa para ajudar os 
 5. Leia a descrição da carreira escolhida.
 
 ## 📜 Licença
-Este projeto está licenciado sob a [MIT License](https://github.com/fernandatollotti/estudos-de-javascript/new/main).
+Este projeto está licenciado sob a [MIT License](https://github.com/fernandatollotti/estudos-de-javascript?tab=MIT-1-ov-file#readme).
