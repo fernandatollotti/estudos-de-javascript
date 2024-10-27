@@ -1,0 +1,257 @@
+/* ====== varibles ====== */
+:root {
+  --body: #F0FAF2;
+  --navbar: #053D38;
+  --sidebar: #34675C;
+  --text: #F2F2F2;
+  --search-bar: #EDEDED;
+  --search-text: #14140F;
+  --accent: #A3CCAB;
+}
+
+[data-theme="dark"] {
+  --body: #121517;
+  --navbar: #262C30;
+  --sidebar: #3A434A;
+  --text: #F2F2F2;
+  --search-bar: #262C30;
+  --search-text: #F2F2F2;
+  --accent: #A3CCAB;
+}
+
+[data-theme="light"] i.ph-moon,
+[data-theme="dark"] i.ph-sun {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+[data-theme="dark"] .search-form .btn-icon {color: var(--text);}
+
+/* ====== reset ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open sans', sans-serif;
+  font-size: 1rem;
+  height: 100vh;
+  background-color: var(--body);
+}
+
+li {list-style: none;}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+[type="search"]::-webkit-search-decoration,
+[type="search"]::-webkit-search-cancel-button {
+  appearance: none;
+}
+
+/* ====== reused style ====== */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+[data-theme="light"] i.ph-sun,
+[data-theme="dark"] i.ph-moon,
+.search-toggle i.ph-x,
+.search-toggle.active i.ph-magnifying-glass,
+.search-container .search-form {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.search-toggle.active i.ph-x,
+.search-toggle.active ~ .search-form {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.navbar .logo-toggle,
+.menu-toggle {display: none;} 
+
+/* ====== components ====== */
+
+/* button */
+.btn-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 0.5rem;
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-icon i {
+  position: absolute;
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* ====== header ====== */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--navbar);
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-links li {margin: 0 0.5rem;}
+
+.navbar .nav-links li > a {
+  position: relative;
+  font-weight: 500;
+  padding: 0.75rem;
+}
+
+.navbar .nav-links li > a::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  opacity: 0;
+  background-color: var(--accent);
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-links li:hover > a::before {opacity: 1;}
+
+.icons-container {
+  display: flex;
+  gap: 12px;
+}
+
+.search-toggle.active ~ .search-form {bottom: -80px;}
+
+.search-container {position: relative;}
+
+.search-container .search-form {
+  position: absolute;
+  right: 0;
+  bottom: -90px;
+  background-color: var(--navbar);
+  width: 18.75rem;
+  height: 3rem;
+  display: flex;
+  padding: 4px;
+  border-radius: 6px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.search-form::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  right: 20px;
+  width: 0.75rem;
+  height: 0.75rem;
+  transform: rotate(45deg);
+  background-color: var(--navbar);
+  z-index: -1;
+}
+
+.search-form input {
+  width: 100%;
+  height: 100%;
+  padding-left: 1rem;
+  color: var(--search-text);
+  background-color: var(--search-bar);
+}
+
+.search-form .btn-icon {
+  position: absolute;
+  right: 0;
+  color: var(--navbar);
+}
+
+/* ====== media queries ====== */
+@media screen and (max-width: 790px) {
+  .menu-toggle {display: block;}
+
+  .header-content.active .nav-logo {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 20rem;
+    height: 100%;
+    background-color: var(--sidebar);
+    z-index: 100;
+    transition: all 0.4s ease;
+  }
+
+  .navbar.active {left: 0;}
+
+  .navbar .logo-toggle {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-toggle i {
+    color: var(--text);
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    padding-top: 3.75rem;
+  }
+
+  .nav-links li a {
+    display: block;
+    margin-top: 1.25rem;
+  }
+}

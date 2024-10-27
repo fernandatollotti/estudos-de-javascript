@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu responsive</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- phosphor icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- css -->
+     <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <!-- header -->
+    <header id="header" class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <!-- menu toggle -->
+          <div class="menu-toggle">
+            <button type="button" class="btn-icon btn-open" sidebar-open>
+              <i class="ph ph-list"></i>
+            </button>
+          </div>
+
+          <!-- logo -->
+          <a href="/" class="logo nav-logo">DevHub</a>
+
+          <!-- navigation -->
+          <nav class="navbar">
+            <div class="logo-toggle">
+              <a href="/" class="logo">DevHub</a>
+              <button type="button" class="btn-icon btn-close" sidebar-close>
+                <i class="ph ph-x"></i>
+              </button>
+            </div>
+            <ul class="nav-links">
+              <li class="nav-item"><a href="#">Home</a></li>
+              <li class="nav-item"><a href="#">About</a></li>
+              <li class="nav-item"><a href="#">Services</a></li>
+              <li class="nav-item"><a href="#">Blog</a></li>
+              <li class="nav-item"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- icons and buttons -->
+          <div class="icons-container">
+            <!-- dark mode toggle button -->
+             <button type="button" class="btn-icon dark-mode-toggle" data-theme-btn>
+                <i class="ph ph-sun"></i>
+                <i class="ph ph-moon"></i>
+             </button>
+
+             <!-- search button -->
+              <div class="search-container">
+                <button type="button" class="btn-icon search-toggle" btn-search>
+                  <i class="ph ph-magnifying-glass"></i>
+                  <i class="ph ph-x"></i>
+                </button>
+                <form class="search-form">
+                  <input type="search" placeholder="Search...">
+                  <button type="button" class="btn-icon search-toggle" btn-search>
+                    <i class="ph ph-magnifying-glass"></i>
+                  </button>
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
