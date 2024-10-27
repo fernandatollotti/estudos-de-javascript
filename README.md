@@ -1,4 +1,4 @@
-# Repositório para Estudos de JavaScript
+# Repositório para estudos de JavaScript
 
 ## 🚀 Descrição do Repositório
 Este repositório foi criado para estudar a lógica de programação por meio de projetos simples. O foco é entender a manipulação de dados, loops, variáveis, arrays, objetos e outras funcionalidades do JavaScript. O objetivo é aprimorar o conhecimento e, assim, facilitar a criação de projetos mais complexos à medida que a aprendizagem avança.
