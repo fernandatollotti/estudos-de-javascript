@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu dropdown</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- header -->
+    <header id="header" class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <!-- logo -->
+          <a href="/" class="logo">DevHub</a>
+
+          <!-- menu toggle -->
+          <button type="button" class="btn-toggle" btn-toggle>
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <!-- navigation -->
+          <nav class="navbar" sidebar>
+            <ul class="nav-links">
+              <li class="nav-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Cursos <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="sub-menu">
+                  <li class="sub-item">
+                    <a href="#">Front-End</a>
+                  </li>
+                  <li class="sub-item">
+                    <a href="#">Back-End</a>
+                  </li>
+                  <li class="sub-item">
+                    <a href="#">FullStack</a>
+                  </li>
+                  <li class="sub-item">
+                    <a href="#">Games</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#">Tutoriais <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="sub-menu">
+                  <li class="sub-item">
+                    <a href="#">HTML5</a>
+                  </li>
+                  <li class="sub-item">
+                    <a href="#">CSS3</a>
+                  </li>
+                  <li class="sub-item">
+                    <a href="#">JavaScript <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="sub-menu">
+                      <li class="sub-item">
+                        <a href="#">jQuery</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">React</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">Angular</a>
+                      </li>
+                      <li class="sub-item">
+                        <a href="#">Next</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
