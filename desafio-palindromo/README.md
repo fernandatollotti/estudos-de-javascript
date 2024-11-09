@@ -1,6 +1,5 @@
 # Desafio do Palíndromo
 
-## 🚀 Descrição do projeto
 Você sabia que algumas palavras podem ser lidas de trás para frente e ainda assim fazem sentido? Este projeto oferece uma maneira divertida de verificar se uma palavra é um palíndromo! Com uma interface simples e direta, você pode descobrir essa curiosidade linguística em segundos.
 
 ## 📚 O projeto é composto pelas seções:
@@ -12,7 +11,7 @@ O objetivo deste projeto é praticar e aprofundar o entendimento sobre **functio
 
 ## 🛠️ Recursos
 ![HTML 5](https://img.shields.io/badge/HTML5-333333?style=for-the-badge&logo=html5)
-![CSS 3](https://img.shields.io/badge/CSS3-333333?style=for-the-badge&logo=css3logoColor=1572B6)
+![CSS 3](https://img.shields.io/badge/CSS3-333333?style=for-the-badge&logo=css3&logoColor=1572B6)
 ![JavaScript](https://img.shields.io/badge/JavaScript-333333?style=for-the-badge&logo=javascript)
 
 ## ✨ Funcionalidades
