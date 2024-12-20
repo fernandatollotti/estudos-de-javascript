@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('reset.css');
+@import url('global.css');
+
+/* ====== base styles ====== */
+body {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form-container,
+.table-container {
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+/* ====== components ====== */
+.btn {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  background: transparent;
+}
+
+.btn-bg {
+  padding: 0.75rem 1.5rem;
+  color: var(--heading);
+  background-color: var(--success);
+}
+
+.btn--delete {color: var(--danger);}
+
+.btn--edit {color: var(--modify);}
+
+/* ====== header ====== */
+.header {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--grandient-primary);
+}
+
+.header__title {
+  text-transform: uppercase;
+  color: var(--title);
+}
+
+/* ====== form ====== */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group {margin-bottom: 2rem;}
+
+.form__label {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.form__label span {
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.form__input {
+  width: 100%;
+  height: 2.75rem;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-top: 0.5rem;
+  background-color: var(--input-bg);
+}
+
+.error-message {
+  display: block;
+  visibility: hidden;
+  color: var(--danger);
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.error--active {visibility: visible;}
+
+/* ====== table ====== */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table,
+.table__row,
+.table__cell {
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.table__cell {padding: 1rem;}
+
+.table__body .empty-message .table__cell {
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+/* ====== media queries ====== */
+@media (min-width: 1200px) {
+  /* ====== components ====== */
+  .btn {width: auto;}
+
+  /* ====== form ====== */
+  .form-container {padding: 5rem 15rem 3rem;}
+
+  .form {width: 50%;}
+
+  .form__input.input-date {width: 50%;}
+
+  /* ====== table ====== */
+  .table-container {
+    width: 100%;
+    padding: 1rem 15rem 2rem;
+  }
+}

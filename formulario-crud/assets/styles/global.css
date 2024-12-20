@@ -1,0 +1,11 @@
+:root {
+  --grandient-primary: linear-gradient(to right, #e2b8f7, #d4bafa, #c7bcfb, #b9befb, #acbff9);
+  --title: #fbfbfb;
+  --heading: #ffffff;
+  --text-primary: #202022;
+  --text-secondary:  #878787;
+  --input-bg: #eeeeee;
+  --danger: #BB2D3B;
+  --success: #03A64A;
+  --modify: #027333;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/styles/main.css">
+
+  <title>Formulário CRUD</title>
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Aniversariantes</h1>
+  </header>
+  <section class="form-container">
+    <form class="form" id="form">
+      <div class="form-group">
+        <label class="form__label" for="name">Nome da pessoa (<span>campo obrigatório</span>)</label>
+        <input class="form__input" type="text" name="name" id="name" placeholder="Digite o nome da pessoa aqui, por exemplo: João">
+        <span class="error-message"></span>
+      </div>
+
+      <div class="form-group">
+        <label class="form__label" for="date">Data de nascimento (<span>campo obrigatório</span>)</label>
+        <input class="form__input input-date" type="date" name="date" id="date">
+        <span class="error-message"></span>
+      </div>
+
+      <!-- Campo oculto para armazenar o ID do item a ser editado -->
+      <input type="hidden" name="id" id="id">
+
+      <button type="submit" class="btn btn-bg"><span>Salvar</span></button>
+
+      <span class="success-message"></span>
+    </form>
+  </section>
+  <section class="table-container">
+    <table class="table" id="table">
+      <thead class="table__header">
+        <tr class="table__row">
+          <th class="table__cell">ID</th>
+          <th class="table__cell">Nome da pessoa</th>
+          <th class="table__cell">Data de nascimento</th>
+          <th class="table__cell">Ações</th>
+        </tr>
+      </thead>
+      <tbody class="table__body">
+        <tr class="table__row empty-message">
+          <td colspan="4" class="table__cell">Nenhum aniversariantes cadastrado.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- js -->
+  <script type="module" src="./assets/scripts/main.js"></script>
+</body>
+</html>
