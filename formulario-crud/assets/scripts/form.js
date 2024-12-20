@@ -1,5 +1,6 @@
 import { insertDataIntoTable, updateTable } from "./table.js";
 import { saveToStorage } from "./storage.js";
+import { showSuccessMessage } from "./messages.js";
 
 export function handleFormSubmit(event) {
   event.preventDefault();
@@ -26,6 +27,9 @@ export function handleFormSubmit(event) {
         // Atualiza a tabela com os dados atualizados
         updateTable();
 
+        // Exibe mensagem de sucesso
+        showSuccessMessage('Dados atualizados com sucesso!');
+
         // Limpa os campos do formulário
         nameInput.value = '';
         dateInput.value = '';
@@ -42,6 +46,9 @@ export function handleFormSubmit(event) {
 
       data.push(formData);
       saveToStorage('person', data);
+
+      // Exibe mensagem de sucesso
+      showSuccessMessage('Dados salvos com sucesso!');
     
       insertDataIntoTable(formData);
       nameInput.value = '';
