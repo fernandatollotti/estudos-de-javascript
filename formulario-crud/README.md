@@ -27,7 +27,7 @@ Para baixar o projeto para sua máquina local, siga os passos abaixo:
 3. Abra o arquivo `index.html` no seu navegador para visualizar e interagir com o formulário e as funcionalidades.
 
 ## 🌐 Como funciona
-O formulário permite que o usuário preencha o nome e a data de nascimento, sendo ambos os campos obrigatórios. Durante o processo, mensagens de erro são exibidas para orientar o usuário, garantindo que ele complete corretamente os campos.
+O formulário permite que o usuário preencha o nome e a data de nascimento, sendo ambos os campos obrigatórios. Durante o processo, mensagens de erro e sucesso são exibidas para orientar o usuário, garantindo que ele complete corretamente os campos.
 
 Após o preenchimento e envio do formulário, os dados são exibidos dinamicamente em uma tabela. Cada registro é acompanhado de um ID gerado automaticamente. Além disso, a tabela oferece opções para editar e excluir os registros, permitindo a manipulação dos dados conforme necessário.
 
@@ -44,9 +44,6 @@ Após o preenchimento e envio do formulário, os dados são exibidos dinamicamen
 🔹 Implementação de CRUD do lado do cliente.  
 🔹 Formatação de datas para melhorar a experiência do usuário.  
 🔹 Validação de formulários com feedback visual.
-
-## 🚧 Melhorias Futuras
-🔸 Implementar uma mensagem de sucesso que seja exibida após a adição, edição ou exclusão de um registro.
 
 ## 🌟 Créditos
 O projeto foi desenvolvido com base em desafios propostos pela [Alura](https://alura-7dayscode.vercel.app/javascript-dom.html), com o objetivo de fortalecer o aprendizado sobre JavaScript e manipulação do DOM.
