@@ -89,6 +89,12 @@ body {
 
 .error--active {visibility: visible;}
 
+.success-message {
+  color: var(--success);
+  padding-top: 2rem;
+  font-weight: 500;
+}
+
 /* ====== table ====== */
 .table {
   width: 100%;
